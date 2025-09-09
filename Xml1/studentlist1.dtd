@@ -1,0 +1,16 @@
+
+
+<!ELEMENT Uhart (student+)>
+
+<!ELEMENT student (names)>
+
+<!ATTLIST student
+  studid ID #REQUIRED
+  Yr (FRESH|SOPH|JUN|SEN) #REQUIRED>
+
+  <!-- First/ last name -->
+  <!ELEMENT names (first, last)>
+
+  <!-- Making first and last a text input-->
+  <!ELEMENT first (#PCDATA)>
+  <!ELEMENT last (#PCDATA)>
