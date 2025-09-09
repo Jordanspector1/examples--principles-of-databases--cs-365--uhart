@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Uhart SYSTEM "studentlist1.dtd"?>
+<!DOCTYPE Uhart SYSTEM "studentlist1.dtd">
+
 <?xml-stylesheet type="text/css" href="style.css"?>
 <Uhart>
-  <student studid="00001" Yr="SEN">
+  <student studid="JORD" Yr="SEN">
     <names>
-      <first>Jordan</first>
-      <last>Spector</last>
+<first>Jordan</first>
+<last>Spector</last>
     </names>
   </student>
 </Uhart>
