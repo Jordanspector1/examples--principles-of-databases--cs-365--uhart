@@ -1,0 +1,24 @@
+/* Show each student as a simple card */
+student {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Pull attribute values from XML onto the page */
+student::before {
+  content: "ID: " attr(studid) "  •  Year: " attr(Yr);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Make name parts readable on separate lines */
+names, first, last { display: block; }
+
+first::before { content: "First: "; font-weight: 600; }
+last::before  { content: "Last: ";  font-weight: 600; }
