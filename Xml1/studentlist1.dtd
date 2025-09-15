@@ -1,16 +1,22 @@
 
 
+<!-- Uhart is my root element. It has to hold one or more students -->
 <!ELEMENT Uhart (student+)>
 
+<!-- A student will always have a names element -->
 <!ELEMENT student (names)>
 
+<!-- Attributes for student: studid = unique ID for each student (can’t repeat) Yr = year in school, has to be one of these: FRESH, SOPH, JUN, SEN -->
 <!ATTLIST student
   studid ID #REQUIRED
-  Yr (FRESH|SOPH|JUN|SEN) #REQUIRED>
+  Yr (fresh|soph|jun|sen) #REQUIRED>
 
   <!-- First/ last name -->
   <!ELEMENT names (first, last)>
 
-  <!-- Making first and last a text input-->
+
+<!-- first name is just text -->
   <!ELEMENT first (#PCDATA)>
+
+  <!-- last name is just text -->
   <!ELEMENT last (#PCDATA)>
