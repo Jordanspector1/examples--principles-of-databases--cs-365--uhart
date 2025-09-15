@@ -1,42 +1,30 @@
-/* Keywords that cannot be combined with other values */
-content: normal;
-content: none;
 
-/* <content-replacement>: <image> values */
-content: url("http://www.example.com/test.png");
-content: linear-gradient(#e66465, #9198e5);
-content: image-set("image1x.png" 1x, "image2x.png" 2x);
 
-/* speech output: alternative text after a "/"  */
-content: url("../img/test.png") / "This is the alt text";
+Uhart {
+  display: block;
+  margin: 1rem;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
 
-/* <string> value */
-content: "unparsed text";
+/* Each student as a simple card */
+student {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+}
 
-/* <counter> values, optionally with <list-style-type> */
-content: counter(chapter_counter);
-content: counter(chapter_counter, upper-roman);
-content: counters(section_counter, ".");
-content: counters(section_counter, ".", decimal-leading-zero);
+/* EXPOSE XML ATTRIBUTES using content + attr() */
+student::before {
+  content: "ID: " attr(studid) "  •  Year: " attr(Yr);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
 
-/* attr() value linked to the HTML attribute value */
-content: attr(href);
-
-/* <quote> values */
-content: open-quote;
-content: close-quote;
-content: no-open-quote;
-content: no-close-quote;
-
-/* <content-list>: a list of content values.
-Several values can be used simultaneously */
-content: "prefix" url("http://www.example.com/test.png");
-content: "prefix" url("/img/test.png") "suffix" / "Alt text";
-content: open-quote counter(chapter_counter);
-
-/* Global values */
-content: inherit;
-content: initial;
-content: revert;
-content: revert-layer;
-content: unset;
+/* Make name parts readable with simple labels */
+names, first, last { display: block; }
+first::before { content: "First: "; font-weight: 600; }
+last::before  { content: "Last: ";  font-weight: 600; }

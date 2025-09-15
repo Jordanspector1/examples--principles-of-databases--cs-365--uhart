@@ -4,14 +4,14 @@
 
 <?xml-stylesheet type="text/css" href="style.css"?>
 <Uhart>
-  <student studid="JORD" Yr="SEN">
+  <student studid="JORD" Yr="sen">
     <names>
       <first>Jordan</first>
       <last>Spector</last>
     </names>
   </student>
 
-  <student studid="RUBY" Yr="SOPH">
+  <student studid="RUBY" Yr="soph">
     <names>
       <first>Ruby</first>
       <last>Stein</last>
