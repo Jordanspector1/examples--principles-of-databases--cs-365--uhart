@@ -6,8 +6,15 @@
 <Uhart>
   <student studid="JORD" Yr="SEN">
     <names>
-<first>Jordan</first>
-<last>Spector</last>
+      <first>Jordan</first>
+      <last>Spector</last>
+    </names>
+  </student>
+
+  <student studid="RUBY" Yr="SOPH">
+    <names>
+      <first>Ruby</first>
+      <last>Stein</last>
     </names>
   </student>
 </Uhart>
