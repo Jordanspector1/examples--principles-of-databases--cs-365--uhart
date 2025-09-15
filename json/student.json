@@ -1,0 +1,22 @@
+{
+  "uhart": {
+    "students": [
+      {
+        "studid": "JORD",
+        "Yr": "SEN",
+        "name": {
+          "first": "Jordan",
+          "last": "Spector"
+        }
+      },
+      {
+        "studid": "RUBY",
+        "Yr": "SOPH",
+        "name": {
+          "first": "Ruby",
+          "last": "Stein"
+        }
+      }
+    ]
+  }
+}
