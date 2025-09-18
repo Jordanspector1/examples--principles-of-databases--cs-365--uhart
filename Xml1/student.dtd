@@ -6,7 +6,7 @@
 <!-- A student will always have a names element -->
 <!ELEMENT student (names)>
 
-<!-- Attributes for student: studid = unique ID for each student (can’t repeat) Yr = year in school, has to be one of these: FRESH, SOPH, JUN, SEN -->
+<!-- Attributes for students -->
 <!ATTLIST student
   studid ID #REQUIRED
   Yr (fresh|soph|jun|sen) #REQUIRED>
