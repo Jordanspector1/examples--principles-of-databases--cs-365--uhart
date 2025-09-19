@@ -20,7 +20,7 @@ student {
 student::before {
   content:
     "ID: " attr(studid) "  •  Year: " attr(Yr) "\A"
-    "Status: " attr(status) "  •  Preferred: " attr(preferredName) "\A"
+    "Status: " attr(status) "  •  Preferred: " attr(prefname) "\A"
     "Email: " attr(email) "  •  Phone: " attr(phone) "\A"
     "GPA: " attr(gpa) "\A"
     "Major: " attr(major) "  •  Minor: " attr(minor) "\A"
