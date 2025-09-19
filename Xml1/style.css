@@ -25,7 +25,7 @@ student::before {
     "GPA: " attr(gpa) "\A"
     "Major: " attr(major) "  •  Minor: " attr(minor) "\A"
     "Advisor: " attr(advisor) "\A"
-    "Enrolled: " attr(initialEnrollmentDate) "  •  Grad: " attr(graduationDate);
+    "Enrolled: " attr(initialenrollmentdate) "  •  Grad: " attr(graddate);
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
