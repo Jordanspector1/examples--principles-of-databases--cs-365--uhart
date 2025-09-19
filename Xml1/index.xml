@@ -4,7 +4,7 @@
 
 <Uhart>
 
-<student studid="JORD" Yr="sen" status="full-time" prefname="REPLACE" email="REPLACE@EXAMPLE.EDU" phone="REPLACE" gpa="REPLACE" major="REPLACE" minor="REPLACE" advisor="REPLACE" initialenrollmentdate="YYYY-MM-DD" graddate="YYYY-MM-DD">
+<student studid="JORDD" Yr="sen" status="full-time" prefname="REPLACE" email="REPLACE@EXAMPLE.EDU" phone="REPLACE" gpa="REPLACE" major="REPLACE" minor="REPLACE" advisor="REPLACE" initialenrollmentdate="YYYY-MM-DD" graddate="YYYY-MM-DD">
     <names>
       <first>Jordan</first>
       <last>Spector</last>
