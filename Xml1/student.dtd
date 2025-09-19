@@ -1,5 +1,3 @@
-
-
 <!-- Uhart is my root element. It has to hold one or more students -->
 <!ELEMENT Uhart (student+)>
 
@@ -20,3 +18,28 @@
 
   <!-- last name is just text -->
   <!ELEMENT last (#PCDATA)>
+
+
+<!-- Add the rest of the required student info as attributes (keep structure the same) -->
+<!ATTLIST student
+
+  <!-- enrollment status must be one of these -->
+  status (full-time|part-time|graduated|withdrawn) #REQUIRED
+
+  <!-- optional preferred name shown to the user -->
+  preferredName CDATA #IMPLIED
+
+  <!-- contact info -->
+  email CDATA #REQUIRED
+  phone CDATA #REQUIRED
+
+
+  <!-- academics -->
+  gpa CDATA #IMPLIED
+  major CDATA #REQUIRED
+  minor CDATA #IMPLIED
+  advisor CDATA #REQUIRED
+
+  <!-- dates in ISO format YYYY-MM-DD -->
+  initialEnrollmentDate CDATA #REQUIRED
+  graduationDate CDATA #IMPLIED>
