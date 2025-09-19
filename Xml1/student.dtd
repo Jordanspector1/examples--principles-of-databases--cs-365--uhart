@@ -14,10 +14,10 @@
 <!ELEMENT last (#PCDATA)>
 
 <!-- Attributes for students -->
-<!-- studid = unique id for a student -->
+<!-- studid is a a unique id for a student -->
 <!ATTLIST student studid ID #REQUIRED>
 
-<!-- Yr = class year -->
+<!-- Yr is class year -->
 <!ATTLIST student Yr (fresh|soph|jun|sen) #REQUIRED>
 
 <!-- status = enrollment status -->
@@ -47,5 +47,5 @@
 <!-- initialenrollmentdate is required  -->
 <!ATTLIST student initialenrollmentdate CDATA #REQUIRED>
 
-<!-- graddate = optional -->
+<!-- graddate is optional -->
 <!ATTLIST student graddate CDATA #IMPLIED>

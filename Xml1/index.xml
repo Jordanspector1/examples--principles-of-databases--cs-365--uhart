@@ -4,21 +4,21 @@
 
 <Uhart>
 
-<student studid="JORD" Yr="sen" status="full-time" prefname="Jordan" email="REPLACE@EXAMPLE.EDU" phone="5083616477" gpa="REPLACE" major="REPLACE" minor="None" advisor="REPLACE" initialenrollmentdate="2020-11-12" graddate="2025-01-04">
+<student studid="JORD" Yr="sen" status="full-time" prefname="Jordan" email="jspector@hartford.edu" phone="5083616477" gpa="3.14" major="CS" minor="None" advisor="Carolyn Roseine" initialenrollmentdate="2020-11-12" graddate="2025-01-04">
     <names>
       <first>Jordan</first>
       <last>Spector</last>
     </names>
   </student>
 
-<student studid="RUBY" Yr="soph" status="part-time" prefname="REPLACE" email="rururu@hartford.edu" phone="1219219212" gpa="REPLACE" major="REPLACE" minor="Something cool" advisor="REPLACE" initialenrollmentdate="2020-11-12">
+<student studid="DARE" Yr="soph" status="part-time" prefname="Johnny" email="rururu@hartford.edu" phone="1219219212" gpa="1.9" major="Psychology" minor="Data Science" advisor="Jordan Spector" initialenrollmentdate="2020-11-12">
     <names>
       <first>Ruby</first>
       <last>Stein</last>
     </names>
   </student>
 
-<student studid="RYAN" Yr="jun" status="full-time" prefname="REPLACE" email="rryan@hartford.edu" phone="112919212" gpa="REPLACE" major="REPLACE" minor="Psychology" advisor="Roy Venegas " initialenrollmentdate="2020-11-12">
+<student studid="RYAN" Yr="jun" status="full-time" prefname="REPLACE" email="rryan@hartford.edu" phone="112919212" gpa="3.5" major="Photography" minor="Psychology" advisor="Roy Venegas " initialenrollmentdate="2020-11-12">
     <names>
       <first>Ryan</first>
       <last>Levitan</last>
