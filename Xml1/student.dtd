@@ -21,25 +21,22 @@
 
 
 <!-- Add the rest of the required student info as attributes (keep structure the same) -->
-<!ATTLIST student
+<!-- enrollment status must be one of these -->
+<!ATTLIST student status (full-time|part-time|graduated|withdrawn) #REQUIRED>
 
-  <!-- enrollment status must be one of these -->
-  status (full-time|part-time|graduated|withdrawn) #REQUIRED
+<!-- optional preferred name shown to the user -->
+<!ATTLIST student preferredName CDATA #IMPLIED>
 
-  <!-- optional preferred name shown to the user -->
-  preferredName CDATA #IMPLIED
+<!-- contact info -->
+<!ATTLIST student email CDATA #REQUIRED>
+<!ATTLIST student phone CDATA #REQUIRED>
 
-  <!-- contact info -->
-  email CDATA #REQUIRED
-  phone CDATA #REQUIRED
+<!-- academics -->
+<!ATTLIST student gpa CDATA #IMPLIED>
+<!ATTLIST student major CDATA #REQUIRED>
+<!ATTLIST student minor CDATA #IMPLIED>
+<!ATTLIST student advisor CDATA #REQUIRED>
 
-
-  <!-- academics -->
-  gpa CDATA #IMPLIED
-  major CDATA #REQUIRED
-  minor CDATA #IMPLIED
-  advisor CDATA #REQUIRED
-
-  <!-- dates in ISO format YYYY-MM-DD -->
-  initialEnrollmentDate CDATA #REQUIRED
-  graduationDate CDATA #IMPLIED>
+<!-- dates in ISO format YYYY-MM-DD -->
+<!ATTLIST student initialEnrollmentDate CDATA #REQUIRED>
+<!ATTLIST student graduationDate CDATA #IMPLIED>
