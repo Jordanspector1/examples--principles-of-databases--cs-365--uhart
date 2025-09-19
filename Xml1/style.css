@@ -18,12 +18,16 @@ student {
 
 
 student::before {
-  content: "ID: " attr(studid) "  •  Year: " attr(Yr);
-  font-weight: 600;
+  content:
+    "ID: " attr(studid) "  •  Year: " attr(Yr) "\A"
+    "Status: " attr(status) "  •  Preferred: " attr(preferredName) "\A"
+    "Email: " attr(email) "  •  Phone: " attr(phone) "\A"
+    "GPA: " attr(gpa) "\A"
+    "Major: " attr(major) "  •  Minor: " attr(minor) "\A"
+    "Advisor: " attr(advisor) "\A"
+    "Enrolled: " attr(initialEnrollmentDate) "  •  Grad: " attr(graduationDate);
   display: block;
   margin-bottom: 0.5rem;
+  font-weight: 600;
+  white-space: pre-wrap; /* makes the \A line breaks render */
 }
-
-names, first, last { display: block; }
-first::before { content: "First: "; font-weight: 600; }
-last::before  { content: "Last: ";  font-weight: 600; }
