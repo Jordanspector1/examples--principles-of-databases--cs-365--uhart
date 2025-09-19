@@ -1,21 +1,20 @@
 {
-  "uhart": {
+  "Uhart": {
     "students": [
       {
         "studid": "JORD",
-        "Yr": "SEN",
-        "name": {
-          "first": "Jordan",
-          "last": "Spector"
-        }
-      },
-      {
-        "studid": "RUBY",
-        "Yr": "SOPH",
-        "name": {
-          "first": "Ruby",
-          "last": "Stein"
-        }
+        "Yr": "sen",
+        "status": "full-time",
+        "prefname": "…",
+        "email": "…",
+        "phone": "…",
+        "gpa": "…",
+        "major": "…",
+        "minor": "…",
+        "advisor": "…",
+        "initialEnrollmentDate": "YYYY-MM-DD",
+        "graduationDate": "YYYY-MM-DD",
+        "names": { "first": "Jordan", "last": "Spector" }
       }
     ]
   }

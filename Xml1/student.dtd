@@ -25,7 +25,7 @@
 <!ATTLIST student status (full-time|part-time|graduated|withdrawn) #REQUIRED>
 
 <!-- optional preferred name shown to the user -->
-<!ATTLIST student preferredName CDATA #IMPLIED>
+<!ATTLIST student prefname CDATA #IMPLIED>
 
 <!-- contact info -->
 <!ATTLIST student email CDATA #REQUIRED>
