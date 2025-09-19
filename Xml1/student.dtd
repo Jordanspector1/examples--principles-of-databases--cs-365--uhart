@@ -1,42 +1,20 @@
-<!-- Uhart is my root element. It has to hold one or more students -->
 <!ELEMENT Uhart (student+)>
-
-<!-- A student will always have a names element -->
 <!ELEMENT student (names)>
+<!ELEMENT names (first, last)>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT last (#PCDATA)>
 
-<!-- Attributes for students -->
 <!ATTLIST student
   studid ID #REQUIRED
-  Yr (fresh|soph|jun|sen) #REQUIRED>
-
-  <!-- First/ last name -->
-  <!ELEMENT names (first, last)>
-
-
-<!-- first name is just text -->
-  <!ELEMENT first (#PCDATA)>
-
-  <!-- last name is just text -->
-  <!ELEMENT last (#PCDATA)>
-
-
-<!-- Add the rest of the required student info as attributes (keep structure the same) -->
-<!-- enrollment status must be one of these -->
-<!ATTLIST student status (full-time|part-time|graduated|withdrawn) #REQUIRED>
-
-<!-- optional preferred name shown to the user -->
-<!ATTLIST student prefname CDATA #IMPLIED>
-
-<!-- contact info -->
-<!ATTLIST student email CDATA #REQUIRED>
-<!ATTLIST student phone CDATA #REQUIRED>
-
-<!-- academics -->
-<!ATTLIST student gpa CDATA #IMPLIED>
-<!ATTLIST student major CDATA #REQUIRED>
-<!ATTLIST student minor CDATA #IMPLIED>
-<!ATTLIST student advisor CDATA #REQUIRED>
-
-<!-- dates in ISO format YYYY-MM-DD -->
-<!ATTLIST student initialEnrollmentDate CDATA #REQUIRED>
-<!ATTLIST student graduationDate CDATA #IMPLIED>
+  Yr (fresh|soph|jun|sen) #REQUIRED
+  status (full-time|part-time|graduated|withdrawn) #REQUIRED
+  prefname CDATA #IMPLIED
+  email CDATA #REQUIRED
+  phone CDATA #REQUIRED
+  gpa CDATA #IMPLIED
+  major CDATA #REQUIRED
+  minor CDATA #IMPLIED
+  advisor CDATA #REQUIRED
+  initialenrollmentdate CDATA #REQUIRED
+  graddate CDATA #IMPLIED
+>
