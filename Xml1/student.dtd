@@ -1,20 +1,51 @@
+<!-- Uhart is my root element. It has to hold one or more students -->
 <!ELEMENT Uhart (student+)>
+
+<!-- A student will always have a names element -->
 <!ELEMENT student (names)>
+
+<!-- First/  last name -->
 <!ELEMENT names (first, last)>
+
+<!-- first name is just text -->
 <!ELEMENT first (#PCDATA)>
+
+<!-- last name is just text -->
 <!ELEMENT last (#PCDATA)>
 
-<!ATTLIST student
-  studid ID #REQUIRED
-  Yr (fresh|soph|jun|sen) #REQUIRED
-  status (full-time|part-time|graduated|withdrawn) #REQUIRED
-  prefname CDATA #IMPLIED
-  email CDATA #REQUIRED
-  phone CDATA #REQUIRED
-  gpa CDATA #IMPLIED
-  major CDATA #REQUIRED
-  minor CDATA #IMPLIED
-  advisor CDATA #REQUIRED
-  initialenrollmentdate CDATA #REQUIRED
-  graddate CDATA #IMPLIED
->
+<!-- Attributes for students -->
+<!-- studid = unique id for a student -->
+<!ATTLIST student studid ID #REQUIRED>
+
+<!-- Yr = class year -->
+<!ATTLIST student Yr (fresh|soph|jun|sen) #REQUIRED>
+
+<!-- status = enrollment status -->
+<!ATTLIST student status (full-time|part-time|graduated|withdrawn) #REQUIRED>
+
+<!-- prefname = optional preferred name -->
+<!ATTLIST student prefname CDATA #IMPLIED>
+
+<!-- An email is required -->
+<!ATTLIST student email CDATA #REQUIRED>
+
+<!-- A number is required -->
+<!ATTLIST student phone CDATA #REQUIRED>
+
+<!-- gpa is optional -->
+<!ATTLIST student gpa CDATA #IMPLIED>
+
+<!-- major is required -->
+<!ATTLIST student major CDATA #REQUIRED>
+
+<!-- minor is optional -->
+<!ATTLIST student minor CDATA #IMPLIED>
+
+<!-- advisor is required -->
+<!ATTLIST student advisor CDATA #REQUIRED>
+
+<!-- initialenrollmentdate is required  -->
+<!ATTLIST student initialenrollmentdate CDATA #REQUIRED>
+
+<!-- graddate = optional -->
+<!ATTLIST student graddate CDATA #IMPLIED>
